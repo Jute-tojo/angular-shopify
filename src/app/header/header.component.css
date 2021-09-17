@@ -1,0 +1,122 @@
+.topbar{
+    padding-top: 15px;
+}
+
+header .topbar .list-main li {
+    display: inline-block;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    border-right: 1px solid #f0f0f0;
+    padding: 0px 13px;
+}
+header .topbar i {
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 15px;
+    color: #F7941D;
+    position: relative;
+    top: 3px;
+}
+
+header a{
+    color: #333;
+}
+
+.navbar-shop ul li{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 13px;
+}
+.navbar-shop ul li a:hover{
+    color: #F7941D;
+}
+.navbar-shop .input-group button{
+    height: 50px;
+    width: 50px;
+}
+header .total-count {
+    position: relative;
+    top: -15px;
+    right: 8px;
+    background: #f6931d;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center; 
+    color: #fff;
+    border-radius: 100%;
+    font-size: 11px;
+    display: inline-block;
+}
+.navbar a{
+    color: white;
+}
+.navbar {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+}
+.text-orange{
+    color: #F7941D;
+}
+nav .categorie{
+    background-color: #F7941D;
+    height: 60px;
+    padding-top: 17px;
+}
+nav .menu{
+    margin-left: 30%;
+}
+.navbar-collapse li{
+    padding: 0px 25px;
+}
+.active{
+    border-bottom: 1px solid #f6931d;
+}
+.navbar-nav li:hover{    
+    font-size: 20px;
+}
+.main-category{
+    background: #fff;    
+    width: 256px;
+    position: relative;
+    left: -11px;
+    top: 11px;
+}
+.main-category li{
+    list-style: none;
+    border-bottom: 1px solid #f6f6f6;
+}
+.main-category li a{
+    text-transform: capitalize;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333;
+}
+.main-category li a:hover{
+    color: #f6931d;
+}
+.parent:hover .children{
+    display: inline-block;
+}
+.children{
+    position: absolute;
+    display: none;
+    background-color: white;
+    border-left: 4px solid #f6931d;
+    width: 200px;
+    left: 255px;
+}
+
+.slide{
+    background-image: url('../../assets/images/chemise.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 510px;
+}
+.slide >div{
+    margin-left: 50%;
+    padding-top: 162px;
+}

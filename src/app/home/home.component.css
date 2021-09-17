@@ -1,0 +1,87 @@
+
+.single-banner {
+    overflow: hidden;
+    position: relative;
+}
+.single-banner .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 35px;
+}
+.single-banner h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #333;
+}
+.single-banner a {
+    color: #333;
+    margin-top: 22px;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+}
+.carde{
+    height: 350px;
+    position: relative;
+}
+.carde img{
+    object-fit: cover;
+}
+.button-head {
+    display: none;
+    background: #fff;    
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -50px;
+    z-index: 9;
+    height: 50px;
+    line-height: 50px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.carde:hover .button-head{
+    top: 300px;
+    display: inline-block;
+}
+.product-action {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    border-radius: 3px;
+}
+.product-action-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    z-index: 99;
+    -webkit-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+.product-action a:hover {
+	color:#F7941D;
+}
+.product-action a{
+    padding-left: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+.product-action-2 a{
+    text-decoration: none;
+}
+.carde a{
+    color: #000;
+}

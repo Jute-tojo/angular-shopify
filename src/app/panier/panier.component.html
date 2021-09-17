@@ -1,0 +1,50 @@
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12">
+            <table class="table shadow">
+                <thead>
+                    <tr class="main-hading">
+                        <th>PRODUIT</th>
+                        <th>NOM</th>
+                        <th>PRIX UNITAIRE</th>
+                        <th class="text-center" style="width: 200px;">QUANTITE</th>
+                        <th class="text-center">TOTAL</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of panier">
+                        <td class="image" data-title="No"><img src="{{ item.image }}" width="100px" alt="#"></td>
+                        <td class="product-des" data-title="Description">
+                            <p class="product-name"><a href="#">{{ item.nom }}</a></p>
+                            <p class="product-des">{{ item.description }}</p>
+                        </td>
+                        <td class="price"><span>{{ item.prix | number }} Ar</span></td>
+                        <td class="qty" data-title="Qty">
+                            <div class="input-group">
+                                <div class="button minus">
+                                    <button type="button" class="btn btn-primary btn-number" (click)="countermoins(item.id)"> 
+                                        <i class="ti-minus"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control" data-min="1" data-max="100" value="{{ item.qte }}">
+                                <div class="button plus">
+                                    <button type="button" class="btn btn-primary btn-number" (click)="counterplus(item.id)">
+                                        <i class="ti-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span>{{ item.total | number }} Ar</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="4">Total :</td>
+                    <td>{{ total | number }} Ar</td>
+                </tfoot>
+            </table>
+        </div>
+        <div class="col-12">
+            <a href="#" class="btn btn-success float-end">Acheter</a>
+        </div>
+    </div>
+</div>
